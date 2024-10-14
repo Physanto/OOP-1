@@ -6,17 +6,19 @@ public class Maestro{
 
     private String id;
     private String nombre;
-    private Strin cel;
+    private String cel;
+    private String lugarTrabajo;
 
     public Maestro(){
 
     }
 
-    public Maestro(Strin id, String nombre, String cel){
+    public Maestro(String id, String nombre, String cel, String lugarTrabajo){
 
         this.id = id;
         this.nombre = nombre;
         this.cel = cel;
+        this.lugarTrabajo = lugarTrabajo;
     }
 
     public String getId(){
@@ -32,7 +34,7 @@ public class Maestro{
     }
 
     public void setNombre(String nombre){
-        this.nombre = nombre
+        this.nombre = nombre;
     }
 
     public String getCel(){
@@ -43,5 +45,16 @@ public class Maestro{
         this.cel = cel;
     }
 
-    public
+    public String getLugarTrabajo(){
+        return lugarTrabajo;
+    }
+    
+    public void setLugarTrabajo(String lugarTrabajo){
+        this.lugarTrabajo = lugarTrabajo;
+    }
+
+    public void mostrarDatosMaestro(){
+        System.out.println("El maestro " + getNombre() + " identificado con numero " + getId() + " y laborando en la ciudad de " + getLugarTrabajo());
+    }
 }
+

@@ -62,12 +62,14 @@ public class Automovil{
     }
 
     public void acelerarAutomovil(){
-
         System.out.println("El " + marca + " color " + color + " acelera constantemente");
     }
 
     public void girarAutomovil(){
-
         System.out.println("El " + marca + " color" + color + " gira su direccion hasta 45 grados");
-    } 
+    }
+
+    public void especificacionesCompletasAuto(){
+        System.out.println("Marca: " + getMarca() + "\nModelo: " + getModelo() + "\nColor: " + getColor() + "\nPlaca: " + getPlaca());
+    }
 }        
